@@ -62,9 +62,36 @@ exports.createMovie = async(req, res) => { // async must be used when we use try
         })
     }
 }
-exports.updateMovie = (req, res) => {
-
+exports.updateMovie = async(req, res) => {
+    try {
+         const updatedMovie = await Movie.findByIdAndUpdate(req.params.id,req.body,{new:true,runValidators:true})
+         // new is set to true to return the updatedMovie 
+         // runvalidator is set to tru e to check the conditions specified in schema
+         res.status(201).json({
+            data: {
+                updatedMovie   // movie : movie should be used when both are diff 
+            }
+          }) 
+        }
+    catch (err) {
+        res.status(400).json ({
+            status : 'fail',
+            message : err.message
+        })
+    }
 }
-exports.deleteMovie = (req, res) => {
-    
+exports.deleteMovie = async(req, res) => {
+      try {
+        await Movie.findByIdAndDelete(req.params.id)
+        res.status(201).json({
+            status : "success",
+            data: null
+          }) 
+      }
+      catch (err) {
+        res.status(400).json ({
+            status : 'fail',
+            message : err.message
+        })
+    }
 }
