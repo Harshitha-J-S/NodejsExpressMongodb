@@ -10,7 +10,6 @@ console.log(process.env)
 mongoose.connect(process.env.CONN_STR, {
     useNewUrlParser : true
 }).then((conn) => {
-     console.log(conn)
      console.log('DB connection Successfull')
 }).catch((error) => {
     console.log('Some error has occured');

@@ -1,0 +1,98 @@
+[
+    {
+    "name": "Inception1",
+    "description": "A mind-bending movie about dreams within dreams.",
+    "duration": 149,
+    "rating": 8.9,
+    "totalRating": 2100000,
+    "releaseYear": 2010,
+    "releaseDate": "2010-07-16",
+    "genres": [
+    "Science Fiction",
+    "Action",
+    "Thriller"
+    ],
+    "directors": [
+    "Christopher Nolan"
+    ],
+    "coverImage": "inception.jpg",
+    "actors": [
+    "Leonardo DiCaprio",
+    "Joseph Gordon-Levitt",
+    "Ellen Page"
+    ],
+    "price": 9.99
+    },
+    {
+        "name": "Inception2",
+        "description": "A mind-bending movie about dreams within dreams.",
+        "duration": 150,
+        "rating": 9.0,
+        "totalRating": 2100000,
+        "releaseYear": 2010,
+        "releaseDate": "2010-07-16",
+        "genres": [
+        "Science Fiction",
+        "Action",
+        "Thriller"
+        ],
+        "directors": [
+        "Christopher Nolan"
+        ],
+        "coverImage": "inception.jpg",
+        "actors": [
+        "Leonardo DiCaprio",
+        "Joseph Gordon-Levitt",
+        "Ellen Page"
+        ],
+        "price": 9.99
+        },
+        {
+            "name": "Inception3",
+            "description": "A mind-bending movie about dreams within dreams.",
+            "duration": 151,
+            "rating": 9.1,
+            "totalRating": 2100000,
+            "releaseYear": 2010,
+            "releaseDate": "2010-07-16",
+            "genres": [
+            "Science Fiction",
+            "Action",
+            "Thriller"
+            ],
+            "directors": [
+            "Christopher Nolan"
+            ],
+            "coverImage": "inception.jpg",
+            "actors": [
+            "Leonardo DiCaprio",
+            "Joseph Gordon-Levitt",
+            "Ellen Page"
+            ],
+            "price": 9.99
+            },
+            {
+                "name": "Inception4",
+                "description": "A mind-bending movie about dreams within dreams.",
+                "duration": 152,
+                "rating": 9.2,
+                "totalRating": 2100000,
+                "releaseYear": 2010,
+                "releaseDate": "2010-07-16",
+                "genres": [
+                "Science Fiction",
+                "Action",
+                "Thriller"
+                ],
+                "directors": [
+                "Christopher Nolan"
+                ],
+                "coverImage": "inception.jpg",
+                "actors": [
+                "Leonardo DiCaprio",
+                "Joseph Gordon-Levitt",
+                "Ellen Page"
+                ],
+                "price": 9.99
+                }
+]
