@@ -16,8 +16,8 @@ const movieSchema = new mongoose.Schema({
         type : Number,
         required:[true,'Duration is required!'],
     },
-    ratings: {
-        type : Number,
+    rating: {
+        type : Number
     },
     totalRating: {
         type: Number
@@ -53,7 +53,7 @@ const movieSchema = new mongoose.Schema({
     price: {
         type: Number,
         require: [true, 'Price is required field!']
-    },
+    }
 })
 const Movie = mongoose.model('Movie', movieSchema)
 

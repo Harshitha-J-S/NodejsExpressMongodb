@@ -23,7 +23,7 @@ mongoose.connect(process.env.CONN_STR, {
 //     name : "chandan",
 //     description:"i don't care",
 //     duration:143,
-//     ratings: 100
+//     rating: 100
 // })
 
 // testMovie.save()
