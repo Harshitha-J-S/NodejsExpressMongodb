@@ -6,10 +6,20 @@ exports.getAllMovies = async(req, res) => {
    
         //filtering - querry - ex-?duration=18$rating=18
         console.log(req.query)
-        const movies = await Movie.find(req.query);
-        
+        // // one way of filtering without considering sort etc
+        // const movies = await Movie.find(req.query);
 
-        //const movies = await Movie.find()
+        //Mongoose 6.0 or less
+        /*const excludeFields = ['sort','page','limit','fields']
+        const queryObj = {...req.query}  // spread operator to create shallow copy of query since we have to delete sort etc of exclude fields
+        
+        excludeFields.forEach((el) => {
+            delete queryObj[el]
+        })
+        console.log(queryObj)
+        const movies = await Movie.find(queryObj)*/
+
+        const movies = await Movie.find(req.query)  //this was old method to simply get all movies
         
         res.status(200).json({
             status:"success",
